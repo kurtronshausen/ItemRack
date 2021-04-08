@@ -28,6 +28,16 @@ ItemRack.CheckButtonLabels = {
 	["ItemRackOptEventEditStanceNotInPVPText"] = "Except in PVP instances",
 }
 
+BACKDROP_ITEMRACK_OPTIONS_16_9 = {
+   bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
+   edgeFile = "Interface\\Buttons\\UI-SliderBar-Border",
+   tile = true,
+   tileEdge = true,
+   tileSize = 16,
+   edgeSize = 9,
+   insets = { left = 3, right = 3, top = 6, bottom = 6 },
+}
+
 function ItemRackOpt.InvOnEnter(self)
 	local id = self:GetID()
 	if ItemRack.IsTimerActive("SlotMarquee") then
@@ -62,6 +72,10 @@ function ItemRackOpt.OnLoad(self)
 	ItemRackOpt.PopulateInitialIcons()
 	ItemRackOpt.PopulateEventList()
 	ItemRackOptSetsCurrentSet:EnableMouse(false)
+
+
+  Mixin(ItemRackOptFrame, _G.BackdropTemplateMixin)
+	ItemRackOptFrame:SetBackdropColor(1,1,1,1)
 
 	ItemRackOptFrameTitle:SetText("IR "..ItemRack.Version)
 

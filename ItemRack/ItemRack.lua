@@ -143,6 +143,19 @@ ItemRack.BankOpen = nil -- 1 if bank is open, nil if not
 
 ItemRack.LastCurrentSet = nil -- last known current set
 
+BACKDROP_ITEMRACK_16_16 = {
+   bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
+   edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
+   tile = true,
+   tileEdge = true,
+   tileSize = 16,
+   edgeSize = 16,
+   insets = { left = 4, right = 4, top = 4, bottom = 4 },
+}
+
+BACKDROP_ITEMRACK_COLOR = CreateColor(0.3, 0.3, 0.3)
+BACKDROP_ITEMRACK_COLOR_5 = CreateColor(0.5, 0.5, 0.5)
+
 ItemRack.EventHandlers = {}
 ItemRack.ExternalEventHandlers = {}
 
