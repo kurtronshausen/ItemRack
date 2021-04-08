@@ -3193,6 +3193,7 @@
 				</Frames>
 				<Scripts>
 					<OnLoad>
+            Mixin(self, _G.BackdropTemplateMixin)
 						self:SetBackdropColor(.1,.1,.1,1)
 					</OnLoad>
 				</Scripts>

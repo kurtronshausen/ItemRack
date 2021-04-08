@@ -409,6 +409,8 @@ do
 end
 
 function ItemRack.InitCore()
+  Mixin(ItemRackMenuFrame, _G.BackdropTemplateMixin)
+
 	ItemRackUser.Sets["~Unequip"] = { equip={} }
 	ItemRackUser.Sets["~CombatQueue"] = { equip={} }
 
@@ -1934,7 +1936,7 @@ function ItemRack.SetSetBindings()
 				SetBindingClick(ItemRackUser.Sets[i].key,buttonName)
 			end
 		end
-		AttemptToSaveBindings(GetCurrentBindingSet())
+		SaveBindings(GetCurrentBindingSet())
 	else
 		ItemRack.Print("Cannot save hotkeys in combat, please try again out of combat!")
 	end
