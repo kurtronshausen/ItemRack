@@ -1,6 +1,6 @@
 __ New in 
 
-__ New in 3.60 - By Groktar __
+__ New in 3.60-alpha1 - By Groktar __
 * TBC Classic support
 
 __ New in 3.54 - By Rottenbeer __

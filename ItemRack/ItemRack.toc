@@ -4,7 +4,7 @@
 ## SavedVariables: ItemRackSettings, ItemRackItems, ItemRackEvents
 ## SavedVariablesPerCharacter: ItemRackUser
 ## OptionalDeps: Masque
-## X-Curse-Project-ID: 340903
+## X-Curse-Project-ID: 481597
 
 # Libraries
 Libs\Libs.xml
